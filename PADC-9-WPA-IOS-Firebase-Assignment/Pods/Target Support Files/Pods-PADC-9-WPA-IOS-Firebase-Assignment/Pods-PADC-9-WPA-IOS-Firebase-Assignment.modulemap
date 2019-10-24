@@ -1,0 +1,6 @@
+framework module Pods_PADC_9_WPA_IOS_Firebase_Assignment {
+  umbrella header "Pods-PADC-9-WPA-IOS-Firebase-Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
