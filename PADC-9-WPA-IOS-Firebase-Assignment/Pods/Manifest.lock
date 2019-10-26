@@ -161,6 +161,9 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.9.2)
+  - SDWebImage (5.2.0):
+    - SDWebImage/Core (= 5.2.0)
+  - SDWebImage/Core (5.2.0)
 
 DEPENDENCIES:
   - Cosmos
@@ -169,6 +172,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - MaterialComponents/Buttons
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -197,6 +201,7 @@ SPEC REPOS:
     - MDFTextAccessibility
     - nanopb
     - Protobuf
+    - SDWebImage
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
@@ -224,7 +229,8 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 67fb42ba613def994e61854de2b3164f13790cc4
+  SDWebImage: 609192dcf3898c910a2848032372ead951e66364
 
-PODFILE CHECKSUM: cad1ac6a7083ac6efa013355c9dac73b54b6897b
+PODFILE CHECKSUM: 2eb02ea8984b63583a5038c48ea8d8d249760fc5
 
 COCOAPODS: 1.7.5

@@ -12,5 +12,6 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'Cosmos'
 pod 'MaterialComponents/Buttons'
+pod 'SDWebImage'
 
 end

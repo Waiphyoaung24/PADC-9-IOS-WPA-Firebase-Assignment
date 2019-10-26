@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import SDWebImage
 
 class FoodListTableViewCell: UITableViewCell {
 
@@ -16,6 +17,20 @@ class FoodListTableViewCell: UITableViewCell {
     @IBOutlet weak var rating_star: CosmosView!
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblPrice: UILabel!
+    
+    var mData : EntreeVO? {
+        didSet {
+            if let data = mData {
+                lblFoodName.text = data.food_name
+                img_food.sd_setImage(with: URL(string: data.imageUrl), completed: nil)
+                lblDuration.text = "Prep in \(data.waiting_time) "
+                lblPrice.text = " $\(data.amount)"
+                let rating = Double(data.rating)
+                rating_star.rating = rating ?? 5
+                
+            }
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
     }

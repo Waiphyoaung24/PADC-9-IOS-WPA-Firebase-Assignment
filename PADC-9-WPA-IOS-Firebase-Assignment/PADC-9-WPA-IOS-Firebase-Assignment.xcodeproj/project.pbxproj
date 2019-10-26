@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746727902361DE90005D04AE /* FoodListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467278F2361DE90005D04AE /* FoodListModel.swift */; };
+		746727932361DED4005D04AE /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746727922361DED4005D04AE /* BaseModel.swift */; };
+		746727952361DEE2005D04AE /* FoodListModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746727942361DEE1005D04AE /* FoodListModelImpl.swift */; };
+		7467279723620779005D04AE /* AddToFoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467279623620779005D04AE /* AddToFoodListViewController.swift */; };
+		7467279923620F44005D04AE /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467279823620F44005D04AE /* ImagePickerManager.swift */; };
 		749B5A4A23616E2E00F0D303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749B5A4923616E2E00F0D303 /* AppDelegate.swift */; };
 		749B5A4C23616E2E00F0D303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749B5A4B23616E2E00F0D303 /* ViewController.swift */; };
 		749B5A4F23616E2E00F0D303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749B5A4D23616E2E00F0D303 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* Begin PBXFileReference section */
 		43734257F14FF852EA238DEA /* Pods-PADC-9-WPA-IOS-Firebase-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-9-WPA-IOS-Firebase-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-PADC-9-WPA-IOS-Firebase-Assignment/Pods-PADC-9-WPA-IOS-Firebase-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		743431FBEFC9FC817F415CB6 /* Pods-PADC-9-WPA-IOS-Firebase-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-9-WPA-IOS-Firebase-Assignment.release.xcconfig"; path = "Target Support Files/Pods-PADC-9-WPA-IOS-Firebase-Assignment/Pods-PADC-9-WPA-IOS-Firebase-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		7467278F2361DE90005D04AE /* FoodListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListModel.swift; sourceTree = "<group>"; };
+		746727922361DED4005D04AE /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		746727942361DEE1005D04AE /* FoodListModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListModelImpl.swift; sourceTree = "<group>"; };
+		7467279623620779005D04AE /* AddToFoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToFoodListViewController.swift; sourceTree = "<group>"; };
+		7467279823620F44005D04AE /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		749B5A4623616E2E00F0D303 /* PADC-9-WPA-IOS-Firebase-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-9-WPA-IOS-Firebase-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		749B5A4923616E2E00F0D303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749B5A4B23616E2E00F0D303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +66,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		746727912361DE9D005D04AE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7467278F2361DE90005D04AE /* FoodListModel.swift */,
+				746727922361DED4005D04AE /* BaseModel.swift */,
+				746727942361DEE1005D04AE /* FoodListModelImpl.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		749B5A3D23616E2E00F0D303 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				749B5A4B23616E2E00F0D303 /* ViewController.swift */,
+				7467279623620779005D04AE /* AddToFoodListViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -177,6 +198,7 @@
 		749B5A672361718E00F0D303 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				746727912361DE9D005D04AE /* models */,
 				749B5A68236171A000F0D303 /* vos */,
 			);
 			path = data;
@@ -211,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				749B5A6C2361A77600F0D303 /* CardView.swift */,
+				7467279823620F44005D04AE /* ImagePickerManager.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -350,12 +373,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				749B5A4C23616E2E00F0D303 /* ViewController.swift in Sources */,
+				746727902361DE90005D04AE /* FoodListModel.swift in Sources */,
 				749B5A792361CCE100F0D303 /* DessertVO.swift in Sources */,
 				749B5A702361AED100F0D303 /* FoodListTableViewCell.swift in Sources */,
+				746727932361DED4005D04AE /* BaseModel.swift in Sources */,
+				746727952361DEE2005D04AE /* FoodListModelImpl.swift in Sources */,
 				749B5A6D2361A77600F0D303 /* CardView.swift in Sources */,
 				749B5A772361CCCF00F0D303 /* MainVO.swift in Sources */,
 				749B5A752361CCC100F0D303 /* DrinkVO.swift in Sources */,
+				7467279723620779005D04AE /* AddToFoodListViewController.swift in Sources */,
 				749B5A732361CCB800F0D303 /* EntreeVO.swift in Sources */,
+				7467279923620F44005D04AE /* ImagePickerManager.swift in Sources */,
 				749B5A4A23616E2E00F0D303 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
